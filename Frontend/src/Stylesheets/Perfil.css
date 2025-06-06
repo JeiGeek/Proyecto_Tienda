@@ -1,0 +1,172 @@
+.perfil-section {
+  background: #00bf62;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+.perfil-title {
+  font-family: 'Sniglet', cursive;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+
+.perfil-container {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.perfil-imagen-container {
+  position: relative;
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+}
+
+.perfil-avatar {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.perfil-camera-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #00b247;
+  color: white;
+  border-radius: 50%;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-camera-icon:hover {
+  background-color: #04a23a;
+}
+
+.perfil-file-input {
+  display: none;
+}
+
+.perfil-info {
+  flex: 1.5;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.perfil-username {
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.perfil-datos > div {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.perfil-label {
+  font-weight: 700;
+  margin-right: 1rem;
+  width: 100px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.perfil-text {
+  color: #666;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+}
+
+.perfil-edit-button {
+  background-color: #00b247;
+  border: none;
+  padding: 0.6rem 1.3rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  border-radius: 20px;
+  width: fit-content;
+  cursor: pointer;
+  margin-top: 1.8rem;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+.perfil-edit-button:hover {
+  background-color: #04a23a;
+}
+
+
+.seccion-regresar {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  text-align: center; /* Centra el contenido */
+  border-radius: 10px;
+}
+
+.btn-regresar {
+  background-color: #00b247;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: fit-content;
+  display: inline-block; /* para que respete text-align center */
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-regresar:hover {
+  background-color: #04a23a;
+  text-decoration: none;
+}
+
+
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .perfil-container {
+    flex-direction: column;
+  }
+  .perfil-imagen-container,
+  .perfil-info {
+    max-width: 100%;
+    flex: none;
+  }
+  .perfil-info {
+    padding: 1rem 1rem 2rem;
+  }
+}
+

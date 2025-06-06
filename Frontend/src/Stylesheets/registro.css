@@ -1,0 +1,137 @@
+/* Permitir que html y body tengan altura completa y scroll */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, #d4f7dc 0%, #81e75f 100%);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* para que mínimo ocupe toda la altura */
+  padding: 20px;
+  gap: 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  flex-shrink: 0;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-container {
+  background-color: #00a94f;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 8px 24px rgba(0, 169, 79, 0.5);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  /* Quitamos max-height y overflow para que el scroll sea de toda la página */
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #9ce9af;
+  color: #006400;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #7fdc7f;
+  outline: none;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: white;
+  color: #00a94f;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #d9f0d8;
+}
+
+.form-container p {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-container p a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form-container p a:hover {
+  color: #9ce9af;
+}
+
+/* Responsividad para móviles y tablets */
+
+@media (max-width: 800px) {
+  .login-container {
+    flex-direction: column;
+    min-height: auto; /* Para que la altura se ajuste al contenido */
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  .logo-container {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .form-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+

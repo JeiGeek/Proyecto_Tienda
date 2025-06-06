@@ -1,0 +1,13 @@
+#main-carousel {
+    margin-top: 10px;
+    border-radius: 20px;       /* Bordes redondeados */
+    overflow: hidden;          /* Oculta lo que sobresale */
+    position: relative;
+}
+
+/* Las imágenes dentro del carousel también con bordes redondeados para que no sobresalgan */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;       /* Mismo radio para que coincida */
+}

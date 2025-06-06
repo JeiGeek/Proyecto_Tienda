@@ -1,0 +1,155 @@
+/* Misión - Pestaña lateral */
+.mission-tab {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  background-color: white;
+  color: #00bf63;
+  border: 3px solid #00bf63;
+  width: 40px;
+  height: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.mission-tab:hover {
+  width: 140px;
+  background-color: #00bf63;
+  color: white;
+}
+
+.mission-tab .star {
+  font-size: 1.5rem;
+  user-select: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.mission-tab .text {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.2s;
+  user-select: none;
+  color: inherit;
+}
+
+.mission-tab:hover .text {
+  opacity: 1;
+}
+
+/* Overlay para el popup con fondo opaco */
+.mission-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px); /* desenfoca el fondo */
+  z-index: 1040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Animaciones fade */
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.mission-popup {
+  background: white;
+  padding: 40px 60px;
+  width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 3px solid #00bf63;
+  display: flex;
+  gap: 20px;
+
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  transform-origin: center center;
+  animation: popupAppear 0.3s forwards;
+}
+
+/* Texto misión */
+.mission-text {
+  flex: 1;
+  color: #333;
+}
+
+/* Logo empresa */
+.mission-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-logo img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* Estilos título */
+.mission-text h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #00bf63;
+}
+
+/* Párrafo */
+.mission-text p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Botón cerrar */
+.close-btn {
+  background-color: #00bf63;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.close-btn:hover {
+  background-color: #00994d;
+}
+
+/* Animación popup aparecer */
+@keyframes popupAppear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -25%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -25%) scale(1);
+  }
+}

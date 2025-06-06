@@ -1,0 +1,139 @@
+/* Tipos - Pestaña lateral */
+.tipos-tab {
+  position: fixed;
+  top: 32%; /* Ajusta posición vertical según lo necesites */
+  left: 0;
+  background-color: white;
+  color: #00bf63;
+  border: 3px solid #00bf63;
+  width: 40px;
+  height: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.tipos-tab:hover {
+  width: 140px;
+  background-color: #00bf63;
+  color: white;
+}
+
+.tipos-tab .star {
+  font-size: 1.5rem;
+  user-select: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.tipos-tab .text {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.2s;
+  user-select: none;
+  color: inherit;
+}
+
+.tipos-tab:hover .text {
+  opacity: 1;
+}
+
+/* Overlay para el popup con fondo opaco */
+.tipos-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 1040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Animaciones fade */
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.tipos-popup {
+  background: white;
+  padding: 40px 60px;
+  width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: 3px solid #00bf63;
+  display: flex;
+  gap: 20px;
+
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  transform-origin: center center;
+  animation: popupAppear 0.3s forwards;
+}
+
+/* Texto tipos */
+.tipos-text {
+  flex: 1;
+  color: #333;
+}
+
+/* Logo empresa */
+.tipos-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tipos-logo img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* Estilos título */
+.tipos-text h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #00bf63;
+}
+
+/* Párrafo */
+.tipos-text p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Animación popup aparecer */
+@keyframes popupAppear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -25%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -25%) scale(1);
+  }
+}

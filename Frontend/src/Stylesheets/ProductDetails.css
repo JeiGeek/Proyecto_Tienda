@@ -1,0 +1,148 @@
+.product-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.product-detail-wrapper {
+  display: flex;
+  gap: 2rem;
+  background-color: #00a94f;
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 169, 79, 0.5);
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+.product-image-section {
+  flex: 1;
+}
+
+.product-detail-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 169, 79, 0.3);
+}
+
+.product-info-section {
+  flex: 1;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: #006400;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0, 169, 79, 0.2);
+  display: flex;
+  flex-direction: column;
+
+  /* CENTRAR TEXTO Y CONTENIDO */
+  text-align: center;
+  align-items: center;
+}
+
+.product-name,
+.product-description,
+.product-price,
+.product-stock,
+.product-total-price {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  color: #004d00;
+}
+
+.product-price,
+.product-stock,
+.product-total-price {
+  margin-bottom: 1rem;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+
+  /* CENTRAR BOTONES DE CANTIDAD */
+  justify-content: center;
+}
+
+.quantity-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #00a94f;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #007a29;
+}
+
+.quantity {
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+
+.add-to-cart-btn {
+  padding: 1rem;
+  background-color: #00a94f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: auto;
+
+  /* CENTRAR BOTÓN */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #007a29;
+}
+
+.return-to-store-btn {
+  margin-top: 1rem;
+  text-align: center;
+  color: #00a94f;
+  font-weight: bold;
+  text-decoration: none;
+
+  /* CENTRAR ENLACE */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.return-to-store-btn:hover {
+  text-decoration: underline;
+}

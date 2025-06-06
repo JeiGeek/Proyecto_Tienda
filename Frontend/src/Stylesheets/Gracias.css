@@ -1,0 +1,35 @@
+/* src/Stylesheets/Gracias.css */
+.gracias-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+  max-width: 600px;
+}
+
+.logo-tienda {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.gracias-title {
+  color: #007bff; /* Azul vibrante para contrastar */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.return-to-store-btn {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.return-to-store-btn:hover {
+  background-color: #0056b3;
+}

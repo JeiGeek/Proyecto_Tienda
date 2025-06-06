@@ -1,0 +1,237 @@
+.admin-panel-wrapper {
+  background-color: #00a94f;
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 169, 79, 0.5);
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
+  margin: 0 auto; /* Centra este wrapper en la página */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  color: #00a94f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background-color: #00bf62;
+  color: white;
+}
+
+.admin-content {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+}
+
+.producto-section {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 900px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-agregar {
+  align-self: center;
+  background-color: #004d26;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.btn-agregar:hover {
+  background-color: #003d1f;
+}
+
+.producto-header,
+.producto-row {
+  display: grid;
+  grid-template-columns: 80px 40px 1fr 80px 60px 150px;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  gap: 0.5rem;
+}
+
+.producto-header {
+  font-weight: bold;
+  background-color: #e8f5e9;
+}
+
+.producto-row {
+  background-color: #ffffff;
+}
+
+.col img.product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.col.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn-editar,
+.btn-eliminar {
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  margin: 0; /* sin margen derecho */
+}
+
+.btn-editar {
+  background-color: #007bff;
+}
+
+.btn-editar:hover {
+  background-color: #005bb5;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+}
+
+.btn-eliminar:hover {
+  background-color: #a71d2a;
+}
+
+@media (max-width: 950px) {
+  .producto-section {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 400px;
+  max-width: 90%;
+  box-sizing: border-box;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.create-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.create-form input[type="text"],
+.create-form input[type="number"],
+.create-form textarea,
+.create-form input[type="file"] {
+  margin-top: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.create-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.modal-buttons button {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-buttons button[type="submit"] {
+  background-color: #00a94f;
+  color: white;
+}
+
+.modal-buttons button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.modal-buttons button[type="button"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Ajustamos el grid para usuarios, con más espacio para username y email */
+.usuario-header,
+.usuario-row {
+  grid-template-columns: 80px 60px 1.5fr 1.5fr 60px 150px;
+}
+
+/* Para la columna email en usuarios: evitar que se desborde y mostrar ... */
+.usuario-row .email,
+.usuario-header .email {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Título "Gestión de Usuarios" con color verde */
+.usuario-section h2 {
+  color: #00A94F;
+}

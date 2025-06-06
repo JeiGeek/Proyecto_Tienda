@@ -1,0 +1,130 @@
+.chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  background-color: #efdef5;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-toggle img {
+  width: 30px;
+  height: 30px;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 2px solid #00bf63;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1001;
+  animation: fadeInUp 0.3s ease;
+}
+
+.chatbot-header {
+  background-color: #00bf63;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chatbot-body {
+  padding: 10px;
+}
+
+.chatbot-messages {
+  max-height: 180px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  animation: pop 0.3s ease;
+}
+
+.message.user {
+  background-color: #e0ffe6;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.chatbot-options button {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 8px;
+  background-color: #00bf63;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.chatbot-options button:hover {
+  background-color: #00994d;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.chatbot-close {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff4d4f; /* rojo */
+  transition: transform 0.2s ease;
+  user-select: none;
+  margin-left: 10px;
+}
+
+.chatbot-close:hover {
+  transform: scale(1.3);
+}

@@ -1,0 +1,208 @@
+/* src/Stylesheets/Checkout.css */
+
+.checkout-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #d4f7dc 0%, #81e75f 100%);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal estilo tarjeta */
+.checkout-wrapper {
+  display: flex;
+  gap: 2rem;
+  background-color: #00a94f;
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 169, 79, 0.5);
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Sección de productos */
+.checkout-products-section {
+  flex: 1;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: #006400;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0, 169, 79, 0.2);
+}
+
+.checkout-products {
+  margin-bottom: 1.5rem;
+}
+
+.checkout-product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #f5fff2;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 169, 79, 0.15);
+}
+
+.checkout-product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+.checkout-product-details {
+  flex: 1;
+}
+
+/* Sección de pago */
+.checkout-payment-section {
+  flex: 1;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: #006400;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0, 169, 79, 0.2);
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: #9ce9af;
+  color: #006400;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Botón de pagar */
+.payment-form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(225, 245, 220);
+  color: #00a94f;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto de brillo */
+.payment-form button::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 300%;
+  background: rgba(250, 252, 251, 0.5);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.payment-form button:hover {
+  background-color: #c4fab5;
+}
+
+.payment-form button:hover::after {
+  top: -50%;
+  left: -50%;
+}
+
+/* Botón de volver */
+.return-to-store-btn {
+  display: block; /* cambia inline-block a block */
+  width: fit-content; /* para que el botón tenga el ancho del contenido */
+  background-color: #198754 !important;
+  color: white !important;
+  border: 1px solid #157347 !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 10px auto 0; /* centrado horizontal */
+}
+.return-to-store-btn:hover {
+  background-color: #157347 !important;
+  color: white !important;
+  border-color: #145c37 !important;
+}
+
+/* Títulos centrados */
+.checkout-products-section h1,
+.checkout-products-section h2,
+.checkout-products-section h3,
+.checkout-payment-section h1,
+.checkout-payment-section h2,
+.checkout-payment-section h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Botón eliminar producto */
+.remove-product-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.remove-product-btn:hover {
+  background-color: #cc0000;
+}
+
+.checkout-product {
+  position: relative; /* necesario para que el botón se posicione respecto a este contenedor */
+}
+
+.checkout-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.checkout-munequito {
+  position: absolute;
+  right: -330px; /* Ajusta este valor según el tamaño del contenedor */
+  top: 82%;
+  transform: translateY(-50%);
+}
+
+.checkout-munequito img {
+  width: 300px; /* Ajusta el tamaño del muñequito */
+  height: auto;
+}

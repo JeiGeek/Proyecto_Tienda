@@ -1,0 +1,106 @@
+/* Contenedor principal con fondo degradado y flex */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Cambié esto para centrar todo */
+  height: 100vh;
+  background: linear-gradient(90deg, #d4f7dc 0%, #81e75f 100%);
+  padding: 20px 50px;
+  gap: 50px;
+}
+
+/* Contenedor logo */
+.logo-container {
+  flex-shrink: 0;
+  max-width: 300px;
+  display: flex;
+  justify-content: center; /* Cambié a center para centrar el logo */
+}
+
+.logo-container img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Contenedor formulario */
+.form-container {
+  flex: 1;
+  max-width: 400px;
+  background-color: #00a94f; /* verde fuerte */
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 8px 24px rgba(0, 169, 79, 0.5);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #9ce9af;
+  color: #006400;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-container {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Botón */
+.btn-submit {
+  width: 100%;
+  background-color: white;
+  color: #00a94f;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn-submit:hover {
+  background-color: #d9f0d8;
+}
+
+/* Link registro */
+.form-container p {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-container p a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form-container p a:hover {
+  color: #9ce9af;
+}
+
