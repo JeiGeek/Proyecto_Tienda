@@ -53,23 +53,24 @@ El proyecto Second Shop está construido con un stack tecnológico robusto y mod
 * **Comunicación:** Modelo Cliente-Servidor a través de servicios RESTful.
 
 ## 🏗️ Estructura del Proyecto
-├── Backend/                    # Lógica de negocio y API REST (Java, Spring Boot)
-│   ├── src/main/java/          # Código fuente Java
-│   ├── src/main/resources/     # Configuraciones
-│   └── pom.xml                 # Dependencias Maven
-├── Frontend/                   # Interfaz de usuario (React.js)
-│   ├── public/                 # Archivos estáticos
-│   ├── src/                    # Componentes y lógica de React
+.
+├── Backend/                            # Lógica de negocio y API REST (Java, Spring Boot)
+│   ├── src/main/java/                  # Código fuente Java
+│   ├── src/main/resources/             # Configuraciones
+│   └── pom.xml                         # Dependencias Maven
+├── Frontend/                           # Interfaz de usuario (React.js)
+│   ├── public/                         # Archivos estáticos
+│   ├── src/                            # Componentes y lógica de React
 │   │   ├── Componentes/
 │   │   ├── Stylesheets/
 │   │   ├── imagenes/
 │   │   ├── services/
 │   │   └── views/
-│   ├── package.json            # Dependencias NPM
-│   └── README.md
-├── Diapositivas.pdf            # Presentación del proyecto
-├── Proyecto de Web.pdf         # Documentación detallada del proyecto
-└── README.md                   # Este archivo (el que estás leyendo)
+│   ├── package.json                    # Dependencias NPM
+│   └── README.md                       # README del frontend
+├── Diapositivas.pdf                    # Presentación del proyecto
+├── Proyecto de Web.pdf                 # Documentación detallada del proyecto
+└── README.md                           # Este archivo (el README principal)
 
 Este proyecto fue desarrollado como parte de un trabajo de clase de Programación en la Web por:
 
