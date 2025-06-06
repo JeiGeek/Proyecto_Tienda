@@ -74,7 +74,7 @@ El proyecto Second Shop está construido con un stack tecnológico robusto y mod
 └── README.md                           # Este archivo (el README principal)
 ```
 
-Este proyecto fue desarrollado como parte de un trabajo de clase de Programación en la Web por:
+Este proyecto fue desarrollado como pryecto final de Programación en la Web por:
 
 * **Diego Alejandro Rodriguez**
 * **Jeison Fernando Guarguati Anaya**
