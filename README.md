@@ -53,6 +53,7 @@ El proyecto Second Shop está construido con un stack tecnológico robusto y mod
 * **Comunicación:** Modelo Cliente-Servidor a través de servicios RESTful.
 
 ## 🏗️ Estructura del Proyecto
+```
 .
 ├── Backend/                            # Lógica de negocio y API REST (Java, Spring Boot)
 │   ├── src/main/java/                  # Código fuente Java
@@ -71,6 +72,7 @@ El proyecto Second Shop está construido con un stack tecnológico robusto y mod
 ├── Diapositivas.pdf                    # Presentación del proyecto
 ├── Proyecto de Web.pdf                 # Documentación detallada del proyecto
 └── README.md                           # Este archivo (el README principal)
+```
 
 Este proyecto fue desarrollado como parte de un trabajo de clase de Programación en la Web por:
 
