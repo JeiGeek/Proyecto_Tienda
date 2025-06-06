@@ -1,4 +1,4 @@
-# Second Shop: Tu Tienda Online de Productos de Segunda Mano y Sustentables
+# Second Shop: Tienda Online de Productos de Segunda Mano y Sustentables (Proyecto de Web)
 
 ![Second Shop Logo/Banner Placeholder](https://github.com/JeiGeek/Proyecto_tienda/blob/master/Frontend/src/imagenes/20.jpg)
 
@@ -75,3 +75,7 @@ Este proyecto fue desarrollado como parte de un trabajo de clase de Programació
 
 * **Diego Alejandro Rodriguez**
 * **Jeison Fernando Guarguati Anaya**
+
+## Repositorio de referencia
+* https://github.com/nicoriver123/frontend_tienda
+* https://github.com/nicoriver123/Tienda
