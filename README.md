@@ -56,35 +56,22 @@ El proyecto Second Shop está construido con un stack tecnológico robusto y mod
 ```
 .
 ├── Backend/                            # Lógica de negocio y API REST (Java, Spring Boot)
-│   ├── src/                            # Directorio principal de código fuente
-│   │   ├── main/                       # Código fuente de la aplicación principal
-│   │   │   ├── java/                   # Clases Java
-│   │   │   │   └── com/jeigeek/tienda/ # Paquete raíz de la aplicación
-│   │   │   │       ├── controller/     # Clases para manejar peticiones HTTP (API REST)
-│   │   │   │       ├── service/        # Lógica de negocio principal
-│   │   │   │       ├── repository/     # Interfaces para acceso a datos (JPA)
-│   │   │   │       ├── model/          # Clases de modelo (entidades de base de datos)
-│   │   │   │       ├── config/         # Configuraciones de seguridad, etc.
-│   │   │   │       └── TiendaApplication.java # Clase principal de Spring Boot
-│   │   │   └── resources/              # Archivos de configuración, estáticos, plantillas
-│   │   │       ├── application.properties # Configuración de la aplicación (BD, puertos)
-│   │   │       └── static/             # Archivos estáticos si los hubiera (ej. para imágenes locales)
-│   │   └── test/                       # Código fuente para pruebas unitarias e integración
-│   │       └── java/                   # Clases de prueba Java
-│   └── pom.xml                         # Dependencias Maven y configuración del proyecto
+│   ├── src/main/java/                  # Código fuente Java
+│   ├── src/main/resources/             # Configuraciones
+│   └── pom.xml                         # Dependencias Maven
 ├── Frontend/                           # Interfaz de usuario (React.js)
-│   ├── public/                         # Archivos estáticos accesibles directamente (index.html, favicon, etc.)
-│   ├── src/                            # Código fuente principal de React
-│   │   ├── Componentes/                # Componentes reutilizables de React
-│   │   ├── Stylesheets/                # Archivos CSS para estilos
-│   │   ├── imagenes/                   # Imágenes usadas en el frontend
-│   │   ├── services/                   # Servicios para consumir el API del backend
-│   │   └── views/                      # Vistas o páginas principales de la aplicación
-│   ├── package.json                    # Dependencias de Node.js y scripts del proyecto
-│   └── README.md                       # README específico del frontend (si lo hay)
-├── Diapositivas.pdf                    # Presentación general del proyecto
+│   ├── public/                         # Archivos estáticos
+│   ├── src/                            # Componentes y lógica de React
+│   │   ├── Componentes/
+│   │   ├── Stylesheets/
+│   │   ├── imagenes/
+│   │   ├── services/
+│   │   └── views/
+│   ├── package.json                    # Dependencias NPM
+│   └── README.md                       # README del frontend
+├── Diapositivas.pdf                    # Presentación del proyecto
 ├── Proyecto de Web.pdf                 # Documentación detallada del proyecto
-└── README.md                           # Este archivo (el README principal del repositorio)
+└── README.md                           # Este archivo (el README principal)
 ```
 
 Este proyecto fue desarrollado como parte de un trabajo de clase de Programación en la Web por:
